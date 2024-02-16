@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Responsive Header</title>
+    <style>
+      /* CSS styles */
+
+      body {
+        font-family: "Kumbh Sans", sans-serif;
+        margin: 0;
+        padding: 0;
+        max-width: 425px;
+        margin: 0 auto;
+      }
+
+      .header {
+        background-color: #ff8412;
+        color: #fff;
+        text-align: center;
+        padding: 20px 4px;
+        position: relative;
+      }
+      .semicircle {
+        position: absolute;
+        bottom: -9px; /* Adjust the distance from the header */
+        left: 0;
+        /* width: 53.6px; Adjust the width of each semicircle */
+        height: 21px; /* Adjust the height of each semicircle */
+        background-color: #ff8412;
+        border-radius: 50%;
+      }
+      .semicircleup {
+        position: absolute;
+        top: -9px; /* Adjust the distance from the header */
+        left: 0;
+        /* width: 53.6px; Adjust the width of each semicircle */
+        height: 21px; /* Adjust the height of each semicircle */
+        background-color: #ff8412;
+        border-radius: 50%;
+      }
+      .semicirclewhite {
+        position: absolute;
+        bottom: -9px; /* Adjust the distance from the header */
+        left: 0;
+        /* width: 53.6px; Adjust the width of each semicircle */
+        height: 21px; /* Adjust the height of each semicircle */
+        background-color: #fff;
+        border-radius: 50%;
+      }
+      .container {
+        max-width: 425px;
+        margin: 0 auto;
+        /* overflow-x: hidden; */
+      }
+      .semicircle,
+      .semicirclewhite,
+      .semicircleup {
+        width: calc(
+          100% / 8
+        ); /* Adjust the width dynamically based on the number of semicircles */
+      }
+
+      /* Responsive styles */
+      @media screen and (max-width: 425px) {
+        .header {
+          font-size: 18px;
+        }
+        img {
+          max-width: 100%; /* Make images responsive */
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <img src="./company-logo.svg" alt="logo" style="margin: 15px 0px" />
+        <img src="./headerimage.svg" alt="header image" />
+        <!-- stats text -->
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+            margin-top: 15px;
+          "
+        >
+          <div
+            style="
+              border-right: 3px solid #ffa047;
+              padding-right: 30px;
+              border-radius: 1px;
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+            "
+          >
+            <p style="margin: 0; font-size: 24px; font-weight: 900">60+</p>
+            <p
+              style="
+                margin: 0;
+                font-size: 12px;
+                font-weight: 400;
+                padding-right: 3px;
+              "
+            >
+              Clinics
+            </p>
+          </div>
+          <div
+            style="
+              border-right: 3px solid #ffa047;
+              padding-right: 30px;
+              padding-left: 30px;
+              border-radius: 1px;
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+            "
+          >
+            <p style="margin: 0; font-size: 24px; font-weight: 900">200+</p>
+            <p
+              style="
+                margin: 0;
+                font-size: 12px;
+                font-weight: 400;
+                padding-right: 3px;
+              "
+            >
+              Doctors
+            </p>
+          </div>
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+              padding-left: 30px;
+            "
+          >
+            <p style="margin: 0; font-size: 24px; font-weight: 900">40+</p>
+            <p
+              style="
+                margin: 0;
+                font-size: 12px;
+                font-weight: 400;
+                padding-right: 3px;
+              "
+            >
+              Cities
+            </p>
+          </div>
+        </div>
+        <!-- <div
+          style="
+            background-color: #ff8412;
+            width: 4em;
+            height: 4em;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -10px;
+          "
+        ></div> -->
+        <div class="semicircle"></div>
+        <div class="semicircle" style="left: calc(100% / 8)"></div>
+        <div class="semicircle" style="left: calc(100% / 8 * 2)"></div>
+        <div class="semicircle" style="left: calc(100% / 8 * 3)"></div>
+        <div class="semicircle" style="left: calc(100% / 8 * 4)"></div>
+        <div class="semicircle" style="left: calc(100% / 8 * 5)"></div>
+        <div class="semicircle" style="left: calc(100% / 8 * 6)"></div>
+        <div class="semicircle" style="left: calc(100% / 8 * 7)"></div>
+        <!-- <div class="semicircle" style="left: 400px"></div> -->
+      </div>
+    </header>
+
+    <!-- Your content goes here -->
+    <!-- premium feature text -->
+    <div>
+      <p
+        style="
+          font-size: 20px;
+          text-align: center;
+          color: #ff8412;
+          font-weight: 800;
+          margin-bottom: 10px;
+        "
+      >
+        Premium <span style="color: #36345e">Features</span>
+      </p>
+      <hr
+        style="
+          text-align: center;
+          width: 122px;
+          height: 4px;
+          background-color: #ff8412;
+          border: none;
+          border-radius: 2px;
+        "
+      />
+    </div>
+
+    <!-- booking section -->
+    <div style="display: flex; margin: auto 18px; align-items: center">
+      <div style="display: flex; flex-direction: column; width: 127px">
+        <img
+          src="./Datequickbooking.svg"
+          alt="booking"
+          width="24"
+          height="24"
+        />
+        <p style="font-size: 12px; font-weight: 700; color: #2b275a">
+          Quick Booking
+        </p>
+        <p style="font-size: 8px; color: #9593ac">
+          Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+          vulputate libero et velit interdum.
+        </p>
+        <img src="./Ticketcoupons.svg" alt="coupon" width="24" height="24" />
+        <p style="font-size: 12px; font-weight: 700; color: #2b275a">Coupons</p>
+        <p style="font-size: 8px; color: #9593ac">
+          Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+          vulputate libero et velit interdum.
+        </p>
+        <img src="./doctordoctors.svg" alt="doctor" width="24" height="24" />
+        <p style="font-size: 12px; font-weight: 700; color: #2b275a">Doctor</p>
+        <p style="font-size: 8px; color: #9593ac">
+          Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+          vulputate libero et velit interdum.
+        </p>
+      </div>
+      <!-- social media icons -->
+      <div style="position: relative">
+        <img src="./featureImage.svg" alt="features-section" />
+        <div style="position: absolute; right: 20px">
+          <img src="./Group 1171274714insta.svg" alt="insta" />
+          <img src="./Group 1171274715twitter.svg" alt="twitter" />
+          <img src="./Group 1171274716facebook.svg" alt="facebook" />
+        </div>
+      </div>
+    </div>
+
+    <!-- footer upper -->
+    <div
+      style="
+        background-color: #ff8412;
+        margin-top: 55px;
+        display: flex;
+        height: 216px;
+        position: relative;
+        padding-bottom: 16px;
+      "
+    >
+      <div class="semicircleup"></div>
+      <div class="semicircleup" style="left: calc(100% / 8)"></div>
+      <div class="semicircleup" style="left: calc(100% / 8 * 2)"></div>
+      <div class="semicircleup" style="left: calc(100% / 8 * 3)"></div>
+      <div class="semicircleup" style="left: calc(100% / 8 * 4)"></div>
+      <div class="semicircleup" style="left: calc(100% / 8 * 5)"></div>
+      <div class="semicircleup" style="left: calc(100% / 8 * 6)"></div>
+      <div class="semicircleup" style="left: calc(100% / 8 * 7)"></div>
+      <img
+        src="./31footerimage.svg"
+        alt="footer mobile"
+        style="position: relative; bottom: 45px; left: 16px"
+      />
+      <div style="display: flex; flex-direction: column; padding: 20px">
+        <p
+          style="
+            font-size: 24px;
+            color: #ffa047;
+            font-weight: 900;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 5px;
+            margin-top: 5px;
+          "
+        >
+          Beautiful<span style="color: #fff; margin-left: 4px">Interface</span>
+        </p>
+        <p style="font-weight: 400; font-size: 10px; color: #ffdab7">
+          Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+          vulputate libero et velit interdum, ac aliquet odio mattis.
+        </p>
+        <div style="display: flex; flex-wrap: wrap">
+          <img
+            src="./Apple storeapplebutton.svg"
+            alt="applebutton"
+            width="92"
+            style="padding-right: 5px"
+          />
+          <img src="./play storegoogleplay.svg" alt="applebutton" width="92" />
+        </div>
+      </div>
+      <div class="semicirclewhite"></div>
+      <div class="semicirclewhite" style="left: calc(100% / 8)"></div>
+      <div class="semicirclewhite" style="left: calc(100% / 8 * 2)"></div>
+      <div class="semicirclewhite" style="left: calc(100% / 8 * 3)"></div>
+      <div class="semicirclewhite" style="left: calc(100% / 8 * 4)"></div>
+      <div class="semicirclewhite" style="left: calc(100% / 8 * 5)"></div>
+      <div class="semicirclewhite" style="left: calc(100% / 8 * 6)"></div>
+      <div class="semicirclewhite" style="left: calc(100% / 8 * 7)"></div>
+    </div>
+
+    <!-- footer lower -->
+    <div
+      style="
+        text-align: center;
+        margin: 20px 0px;
+        font-size: 10px;
+        color: #2b275a;
+      "
+    >
+      <p style="margin-bottom: 0px">
+        Please do not reply to this mail as this is an automated mail service.
+      </p>
+      <p style="margin-top: 5px">
+        If you have any questions, feel free to contact us at
+        support@dentist.com. Update email preferences or
+        <span
+          style="color: #ff8412; text-decoration: underline; font-weight: 800"
+          >unsubscribe.</span
+        >
+      </p>
+      <p
+        style="
+          margin-top: 10px;
+          color: #494672;
+          font-weight: 900;
+          margin-bottom: 10px;
+        "
+      >
+        Terms and conditions | Privacy Policy
+      </p>
+    </div>
+  </body>
+</html>

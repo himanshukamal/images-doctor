@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Header</title>
+    <style>
+      /* CSS styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .header {
+        background-color: #ff8412;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 425px;
+        margin: 0 auto;
+      }
+
+      /* Responsive styles */
+      @media screen and (max-width: 425px) {
+        .header {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <img src="./otpEmailer/company-logo.svg" alt="logo" />
+        <img src="./otpEmailer/headerimage.svg" alt="header image" />
+        <h1>Responsive Header</h1>
+        <p>
+          This header is responsive and has a max width of 425px on mobile
+          devices.
+        </p>
+      </div>
+    </header>
+
+    <!-- Your content goes here -->
+  </body>
+</html>
